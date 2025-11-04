@@ -1,0 +1,57 @@
+O que você vai fazer?
+
+
+Neste nível, o jogador precisa coletar rapidamente recursos essenciais (armas, munições, kits médicos e ferramentas) e organizar esses itens dentro da mochila virtual, garantindo eficiência nas primeiras decisões estratégicas do jogo. Para isso, você implementará, com o uso de estruturas de dados compostas (structs) e listas sequenciais, a representação dos itens do inventário.
+
+
+
+Sua missão é construir um sistema de inventário que simule a mochila de loot inicial do jogador. Para isso, você criará uma struct chamada Item, que armazenará informações essenciais de cada objeto coletado. O sistema permitirá que o jogador cadastre, remova, liste e busque por itens dentro da mochila.
+
+
+Requisitos funcionais
+
+
+Confira as principais funcionalidades do sistema a serem implementadas:
+
+
+Criação da struct: definir uma struct chamada Item com os campos char nome[30], char tipo[20] e int quantidade.
+
+Cadastro de itens: o sistema deve permitir que o jogador cadastre até 10 itens informando nome, tipo (ex: arma, munição e cura) e quantidade.
+
+Remoção de itens: permitir que o jogador exclua um item da mochila, informando seu nome.
+
+Listagem dos itens registrados com seus dados: o que deve ocorrer após cada operação.
+
+Busca sequencial: implementar uma função de busca sequencial que localize um item na mochila com base no nome e exiba seus dados.
+
+Requisitos não funcionais
+
+
+Considere também os seguintes critérios durante o desenvolvimento:
+
+
+Usabilidade: a interface do sistema deve ser clara e orientativa, com mensagens que auxiliem o jogador nas decisões.
+
+Desempenho: o sistema deve responder a cada comando com menos de 2 segundos.
+
+Documentação: o código deve conter comentários explicativos sobre a criação da struct, o uso das funções e o fluxo de execução.
+
+Manutenibilidade: uso de nomes de variáveis e funções que representem com clareza sua função, facilitando futuras alterações no código.
+
+Instruções detalhadas
+
+
+A seguir, veja os elementos básicos que devem compor a estrutura do programa:
+
+
+Bibliotecas necessárias: inclua stdio.h, string.h, e stdlib.h.
+
+Definição da struct: declare a struct Item com os campos solicitados.
+
+Vetor de structs: crie um vetor com capacidade para armazenar até 10 itens.
+
+Funções obrigatórias: inserir Item(); removerItem(); listarItens(); buscarItem()
+
+Leitura de dados: use scanf() para ler valores inteiros e fgets() ou scanf("%s", ...) para capturar strings com cuidado.
+
+Uso de laços: use for ou while para manipular e percorrer o vetor de itens.

@@ -1,0 +1,117 @@
+O que você vai fazer?
+
+
+Prepare-se para o desafio final! Imagine que você chegou ao momento decisivo do jogo: a última safe zone está se fechando e apenas os jogadores mais habilidosos sobreviveram até aqui. Para escapar da ilha, o jogador precisa montar um plano estratégico de fuga construindo uma torre de resgate com os componentes certos, na ordem exata e com a prioridade certa. Assim, neste nível, você é responsável por desenvolver o módulo avançado de organização dos componentes necessários para a missão final.
+
+
+
+Sua tarefa é implementar diferentes algoritmos de ordenação, analisar seu desempenho, aplicar uma busca binária otimizada e permitir ao jogador decidir qual estratégia usar com base nas condições de jogo. Esta fase integra e consolida os conhecimentos de ordenação, busca eficiente e modularização.
+
+
+
+Você deve criar um sistema de priorização e montagem de componentes da torre de fuga, em que o jogador pode escolher diferentes critérios de ordenação (por nome, tipo ou prioridade) e, após ordenar, realizar busca binária por um item-chave que destrava a ativação da torre. Além disso, o sistema deve mostrar o número de comparações para que o jogador entenda os impactos da escolha do algoritmo.
+
+
+Requisitos funcionais
+
+
+Confira as principais funcionalidades do sistema a serem implementados:
+
+
+1. Criação de structs:
+
+
+Componente: com os campos char nome[30], char tipo[20], int prioridade.
+
+
+2. Entrada dos dados:
+
+
+Cadastro de até 20 componentes necessários para a montagem da torre.
+
+Os dados devem incluir o nome do componente (ex: “chip central”), seu tipo (ex: “controle”, “suporte”, “propulsão”) e a prioridade (de 1 a 10).
+
+
+3. Opções de ordenação:
+
+
+Bubble sort: ordenar por nome (string).
+
+Insertion sort: ordenar por tipo (string).
+
+Selection sort: ordenar por prioridade (int).
+
+
+4. Busca binária:
+
+
+Aplicável apenas após a ordenação por nome.
+
+Deve localizar o componente-chave para iniciar a montagem.
+
+
+5. Medição de desempenho:
+
+
+Contar número de comparações realizadas em cada ordenação.
+
+Mostrar o tempo de execução de cada algoritmo (usar clock()).
+
+
+6. Montagem final:
+
+
+Exibir todos os componentes ordenados conforme a estratégia escolhida.
+
+Confirmar visualmente a presença do componente-chave.
+
+Requisitos não funcionais
+
+
+Considere também os seguintes critérios relevantes durante o desenvolvimento:
+
+
+Interface amigável: um menu interativo deve ter essa característica.
+
+Desempenho educacional: o programa deve fornecer feedback numérico sobre comparações e tempo.
+
+Clareza no código: todas as funções e blocos principais devem estar comentados.
+
+Modularização adequada: cada algoritmo deve estar em uma função separada, facilitando comparação e manutenção.
+
+Instruções detalhadas
+
+
+A seguir, veja os elementos básicos que devem compor a estrutura do programa:
+
+
+1. Bibliotecas necessárias: stdio.h, stdlib.h, string.h, time.h.
+
+
+2. Funções obrigatórias:
+
+
+selectionSortPrioridade(Componente[], int)
+
+insertionSortTipo(Componente[], int)
+
+selectionSortPrioridade(Componente[], int))
+
+buscaBinariaPorNome(Componente[], int, char[])
+
+mostrarComponentes(Componente[], int)
+
+medirTempo(void (*algoritmo)(), ...)
+
+
+3. Entrada e saída:
+
+
+Use fgets para capturar strings com segurança.
+
+Exibir o vetor de componentes formatado com nome, tipo e prioridade após cada operação.
+
+Comentários adicionais
+
+
+Com esse desafio, você consolidará a sua compreensão sobre estratégias clássicas de ordenação, implementação de busca binária e análise de desempenho em tempo real. Ao utilizar algoritmos didáticos, como bubble sort, insertion sort e selection sort, você desenvolve intuição sobre a eficiência de diferentes métodos e entende os efeitos da ordenação no comportamento de algoritmos de busca.
